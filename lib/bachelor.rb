@@ -4,8 +4,12 @@ end
 
 def get_contestant_name(data, occupation)
     data.keys.find do |season|
-      data[season].find do |person|
-        puts person.inspect
+      data[season].find do |people|
+        people.find do |k,v|
+          puts k
+          puts v
+
+        end
 
       end
     end
