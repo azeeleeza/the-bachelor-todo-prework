@@ -3,14 +3,14 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-    found = data.keys.find do |season|
+    data.keys.find do |season|
       data[season].find do |person|
-        data[season][person]["occupation"] == occupation
+        puts data[season][person]["occupation"]
 
       end
     end
 
-    puts found
+  #  puts found
 end
 
 def count_contestants_by_hometown(data, hometown)
