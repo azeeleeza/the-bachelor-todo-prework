@@ -9,7 +9,9 @@ def get_contestant_name(data, occupation)
         #   v = occupation
         #
         # end
-         people["occupation"] == occupation
+         if people["occupation"] == occupation
+           people["name"]
+         end
       end
     end
 
