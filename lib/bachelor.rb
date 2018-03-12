@@ -5,12 +5,11 @@ end
 def get_contestant_name(data, occupation)
     data.keys.find do |season|
       data[season].find do |people|
-        people.find do |k,v|
-          puts k
-          puts v
-
-        end
-
+        # people.find do |k,v|
+        #   v = occupation
+        #
+        # end
+        puts people["occupation"]
       end
     end
 
