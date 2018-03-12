@@ -40,7 +40,7 @@ def get_average_age_for_season(data, season)
   total=0
   count=0
   data[season].each do |person|
-    total+=parseInt(person["age"])
+    total+=person["age"].to_i
     count+=1
   end
 
