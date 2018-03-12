@@ -1,9 +1,13 @@
 def get_first_name_of_season_winner(data, season)
-  puts data[season].find { |element| element.values.include?("Winner")}["name"].split(" ").first
+  data[season].find { |element| element.values.include?("Winner")}["name"].split(" ").first
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+    data.keys.find do |season|
+      data[season].find do |keys, values|
+        values.include?(occupation)}
+      end
+    end
 end
 
 def count_contestants_by_hometown(data, hometown)
