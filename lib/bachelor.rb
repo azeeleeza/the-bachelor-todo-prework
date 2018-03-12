@@ -37,5 +37,12 @@ def get_occupation(data, hometown)
   end
 
 def get_average_age_for_season(data, season)
-  # code here
+  total=0
+  count=0
+  data[season].each do |person|
+    total+=parseInt(person["age"])
+    count+=1
+  end
+
+  total/count.to_f.ceil
 end
