@@ -4,7 +4,10 @@ end
 
 def get_contestant_name(data, occupation)
     data.keys.find do |season|
-      puts data[season]
+      data[season].find do |person|
+        data[season][person]["occupation"] == occupation
+          
+      end
     end
 end
 
