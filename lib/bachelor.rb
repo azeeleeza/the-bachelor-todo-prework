@@ -1,5 +1,7 @@
 def get_first_name_of_season_winner(data, season)
-  # code here
+  puts data[season].find do |element|
+    element.values.include?("Winner")
+  end
 end
 
 def get_contestant_name(data, occupation)
