@@ -5,7 +5,7 @@ end
 def get_contestant_name(data, occupation)
     data.keys.find do |season|
       who = data[season].find do |keys, values|
-        values.include?(occupation)}
+        values.include?(occupation)
       end
       puts who
     end
