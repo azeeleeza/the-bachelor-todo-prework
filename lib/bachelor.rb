@@ -43,6 +43,6 @@ def get_average_age_for_season(data, season)
     total+=person["age"].to_i
     count+=1
   end
-puts total/count.to_f
-puts (total/count.to_f).ceil
+avg = total/count.to_f
+avg.round(0)
 end
