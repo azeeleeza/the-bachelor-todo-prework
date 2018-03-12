@@ -3,8 +3,8 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-    found=data.keys.find do |season|
-      data[season].find do |people|
+    found=data.keys.each do |season|
+      data[season].each do |people|
         # people.find do |k,v|
         #   v = occupation
         #
