@@ -10,7 +10,7 @@ def get_contestant_name(data, occupation)
         #
         # end
          if people["occupation"] == occupation
-            people["name"]
+            return people["name"]
          end
       end
     end
